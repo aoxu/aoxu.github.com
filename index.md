@@ -1,7 +1,7 @@
 ---
 layout: page
 title: aoxu
-tagline: 一个懂产品的工程师。
+tagline: 一个懂产品的攻城狮。
 ---
 {% include JB/setup %}
 ###最新文章
