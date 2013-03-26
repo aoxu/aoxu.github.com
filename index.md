@@ -11,5 +11,4 @@ tagline: 一个懂产品的攻城狮。
   {% endfor %}
 </ul>
 
-###[订阅源](http://feeds.uri.lv/aoxu)
 
