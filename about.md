@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "About"
+title: "关于我"
 description: ""
 ---
 [豆瓣](http://www.douban.com/people/xatest/)  
