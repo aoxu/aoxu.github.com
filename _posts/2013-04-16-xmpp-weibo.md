@@ -6,7 +6,7 @@ category:
 tags: []
 ---
 #基本概念
-先科普一下，[XMPP](https://zh.wikipedia.org/zh/XMPP)是一个著名的开放式即时通信协议，以前也叫Jabber，Gtalk用的就是这个协议。在Mac OS X系统上，使用[Adium](http://adium.im/)这个支持多账号、多协议的即时通信软件，可以完美得兼容XMPP。新浪微博私信是提供XMPP服务的，接下来我就用Adium来演示新浪微博私信的配置方法。  
+先科普一下，[XMPP](https://zh.wikipedia.org/zh/XMPP)是一个著名的开放式即时通信协议，以前也叫Jabber，Gtalk用的就是这个协议。在Mac OS X系统上，使用[Adium](http://adium.im/)这个支持多账号、多协议的即时通信软件，可以完美地兼容XMPP。新浪微博私信是提供XMPP服务的，接下来我就用Adium来演示新浪微博私信的配置方法。  
 
 #设置步骤
 1. 打开Adium菜单里的`偏好设置`，第一个标签页就是`账号`，点击左下角的+号按钮添加自己的新浪微博账号。填写方法是新浪微博账号加上@weibo.com。新浪微博账号里的`@`符号用`\40`代替。如果你的账号是`xxx@gmail.com`，那么这里填写的Jabber ID就是`xxx\40gmail.com@weibo.com`。密码填写你的微博密码。  如图：![weibo_account](http://ww1.sinaimg.cn/large/a74eed94jw1e3rqlhnlqnj.jpg)  
