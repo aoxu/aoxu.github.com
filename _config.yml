@@ -10,8 +10,8 @@ markdown: redcarpet
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : aoxuis.me
-tagline: 一个懂产品的工程师。
+title : XA技术不宅
+tagline: 请不要在家长陪同下观看。
 author :
   name : Ao Xu
   email : xatest@gmail.com
@@ -99,7 +99,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-39934426-1'
     getclicky :
       site_id : 
     mixpanel :
