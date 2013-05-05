@@ -22,12 +22,12 @@ tags: []
 1. 直接在项目主页左上角下载ZIP文件。  
 ZIP文件只包含master主干最新版的文件，但是不包含子模块，子模块也需要单独下载。  
 2. 使用git的浅clone，指定clone的深度。
-```
+{% highlight bash %}
 git clone --depth 1 git://github.com/dualface/quick-cocos2d-x.git
 cd quick-cocos2d-x
 git clone --depth 1 git@github.com:dualface/cocos2d-x.git lib/cocos2d-x
 git submodule add git@github.com:dualface/cocos2d-x.git lib/cocos2d-x
-```
+{% endhighlight %}
 这个方法适用于所有的git项目。  
 
 后面照着主页的说明做就可以了。
