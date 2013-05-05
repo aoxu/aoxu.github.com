@@ -44,18 +44,17 @@ git submodule add git@github.com:dualface/cocos2d-x.git lib/cocos2d-x
 ###Hello, world!
 打开`samples/CoinFlip/scrips/main.lua`
 这个简短的lua源文件里，下面这一段是执行Lua代码的起始处：
-<pre><code>
+{% highlight lua %}
 xpcall(function()
     require("game")
     game.startup()
 end, __G__TRACKBACK__)
-</code></pre>
 改成
-<pre><code>
+{% highlight lua %}
 xpcall(function()
     print("Hello, world!")
 end, __G__TRACKBACK__)
-</code></pre>
+{% endhighlight %}
 你将会在控制台里看到这一句输出。  
 ![HelloWorld.png](http://ww1.sinaimg.cn/large/a74eed94jw1e4dds45upoj205w0373yn.png)  
 
@@ -69,7 +68,7 @@ end, __G__TRACKBACK__)
 
 ###集成方法
 用Xcode打开`quick-cocos2d-x/lib/proj.ios/libquickcocos2dx.xcodeproj`，需要添加两个目录。  在`lib/lua_extensions/`下建好lsqlite3和sqlite两个目录，源码拷贝进去。然后自己写一个`lsqlite3.h`，提供luaopen的入口。代码如下：
-<pre><code>
+{% highlight c %}
 #ifndef __LSQLITE3_H__
 #define __LSQLITE3_H__
 
@@ -78,9 +77,9 @@ end, __G__TRACKBACK__)
 LUALIB_API int luaopen_lsqlite3(lua_State *L);
 
 #endif
-</code></pre>
+{% endhighlight %}
 再编辑`lib/lua_extensions/lua_extensions.c`文件，找到`luax_exts`，加入lsqlite3模块：
-<pre><code>
+{% highlight lua %}
 static luaL_Reg luax_exts[] = {
     {"cjson", luaopen_cjson},
     {"zlib", luaopen_zlib},
@@ -91,12 +90,13 @@ static luaL_Reg luax_exts[] = {
     {NULL, NULL}
 };
 </code></pre>
+{% endhighlight %}
 这些做完以后，你改动的文件结构应该是这样：  
 ![ChangeList.png](http://ww1.sinaimg.cn/large/a74e55b4jw1e4dfdolv8xj208g0743z9.png)  
 其中VERSION文件是我自己写的，为了记录所使用sqlite库版本号。
 ###测试代码
 在刚才写Hello, world!的地方，改成以下代码，就可以在quick-cocos2d-x中测试lua对sqlite的调用了。
-<pre><code>
+{% highlight lua %}
 local sqlite3 = require("lsqlite3")
 
 local db = sqlite3.open_memory()
@@ -112,11 +112,10 @@ db:exec[[
 for row in db:nrows("SELECT * FROM test") do
     print(row.id, row.content)
 end
-</code></pre>
+{% endhighlight %}
 如果成功你将会在控制台看到三行文字输出：
-<pre><code>
+{% highlight lua %}
 Hello World
 Hello Lua
 Hello Sqlite3
-</code></pre>
 相关的集成代码我已经[提交了pull request到quick-cocos2d-x](https://github.com/dualface/quick-cocos2d-x/pull/36)。
