@@ -49,6 +49,7 @@ xpcall(function()
     require("game")
     game.startup()
 end, __G__TRACKBACK__)
+{% endhighlight %}
 改成
 {% highlight lua %}
 xpcall(function()
