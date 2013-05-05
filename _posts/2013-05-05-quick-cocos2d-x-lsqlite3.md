@@ -21,13 +21,12 @@ tags: []
 
 1. 直接在项目主页左上角下载ZIP文件。  
 ZIP文件只包含master主干最新版的文件，但是不包含子模块，子模块也需要单独下载。  
-2. 使用git的浅clone，指定clone的深度。  
-````bash
-git clone --depth 1 git://github.com/dualface/quick-cocos2d-x.git
+2. 使用git的浅clone，指定clone的深度。
+<pre><code>git clone --depth 1 git://github.com/dualface/quick-cocos2d-x.git
 cd quick-cocos2d-x
 git clone --depth 1 git@github.com:dualface/cocos2d-x.git lib/cocos2d-x
 git submodule add git@github.com:dualface/cocos2d-x.git lib/cocos2d-x
-````  
+</code></pre>
 这个方法适用于所有的git项目。  
 
 后面照着主页的说明做就可以了。
@@ -44,18 +43,18 @@ git submodule add git@github.com:dualface/cocos2d-x.git lib/cocos2d-x
 ###Hello, world!
 打开`samples/CoinFlip/scrips/main.lua`
 这个简短的lua源文件里，下面这一段是执行Lua代码的起始处：
-````lua
+<pre><code>
 xpcall(function()
     require("game")
     game.startup()
 end, __G__TRACKBACK__)
-````
+</code></pre>
 改成
-````lua
+<pre><code>
 xpcall(function()
     print("Hello, world!")
 end, __G__TRACKBACK__)
-````
+</code></pre>
 你将会在控制台里看到这一句输出。  
 ![HelloWorld.png](http://ww1.sinaimg.cn/large/a74eed94jw1e4dds45upoj205w0373yn.png)  
 
@@ -69,7 +68,7 @@ end, __G__TRACKBACK__)
 
 ###集成方法
 用Xcode打开`quick-cocos2d-x/lib/proj.ios/libquickcocos2dx.xcodeproj`，需要添加两个目录。  在`lib/lua_extensions/`下建好lsqlite3和sqlite两个目录，源码拷贝进去。然后自己写一个`lsqlite3.h`，提供luaopen的入口。代码如下：
-````c
+<pre><code>
 #ifndef __LSQLITE3_H__
 #define __LSQLITE3_H__
 
@@ -78,9 +77,9 @@ end, __G__TRACKBACK__)
 LUALIB_API int luaopen_lsqlite3(lua_State *L);
 
 #endif
-````
+</code></pre>
 再编辑`lib/lua_extensions/lua_extensions.c`文件，找到`luax_exts`，加入lsqlite3模块：
-````c
+<pre><code>
 static luaL_Reg luax_exts[] = {
     {"cjson", luaopen_cjson},
     {"zlib", luaopen_zlib},
@@ -90,13 +89,13 @@ static luaL_Reg luax_exts[] = {
 
     {NULL, NULL}
 };
-````
+</code></pre>
 这些做完以后，你改动的文件结构应该是这样：  
 ![ChangeList.png](http://ww1.sinaimg.cn/large/a74e55b4jw1e4dfdolv8xj208g0743z9.png)  
 其中VERSION文件是我自己写的，为了记录所使用sqlite库版本号。
 ###测试代码
 在刚才写Hello, world!的地方，改成以下代码，就可以在quick-cocos2d-x中测试lua对sqlite的调用了。
-````lua
+<pre><code>
 local sqlite3 = require("lsqlite3")
 
 local db = sqlite3.open_memory()
@@ -112,11 +111,11 @@ db:exec[[
 for row in db:nrows("SELECT * FROM test") do
     print(row.id, row.content)
 end
-````
+</code></pre>
 如果成功你将会在控制台看到三行文字输出：
-````
+<pre><code>
 Hello World
 Hello Lua
 Hello Sqlite3
-````
+</code></pre>
 相关的集成代码我已经[提交了pull request到quick-cocos2d-x](https://github.com/dualface/quick-cocos2d-x/pull/36)。
