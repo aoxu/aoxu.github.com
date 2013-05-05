@@ -119,4 +119,5 @@ end
 Hello World
 Hello Lua
 Hello Sqlite3
+{% endhighlight %}
 相关的集成代码我已经[提交了pull request到quick-cocos2d-x](https://github.com/dualface/quick-cocos2d-x/pull/36)。
