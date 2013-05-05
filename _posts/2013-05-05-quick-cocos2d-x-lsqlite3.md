@@ -90,7 +90,6 @@ static luaL_Reg luax_exts[] = {
 
     {NULL, NULL}
 };
-</code></pre>
 {% endhighlight %}
 这些做完以后，你改动的文件结构应该是这样：  
 ![ChangeList.png](http://ww1.sinaimg.cn/large/a74e55b4jw1e4dfdolv8xj208g0743z9.png)  
