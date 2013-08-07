@@ -24,14 +24,14 @@ git subtree是一条git子命令，本质上subtree是一种合并策略，[从g
 ##git subtree的前提条件
 subtree子命令很晚才集成到git中，请确保你的git版本（使用git --version查看） > v1.8.0.0。有些文章中说v1.7.11就已经集成了，实际上没有，如果直接执行会看到这样的结果：  
 ```
-$git subtree
+$git subtree  
 git: 'subtree' is not a git command. See 'git --help'.
 ```
 如果你是在OS X下使用git，推荐用[homebrew](http://brew.sh/)来安装新版本
 ```
-$brew install git
-$git --version
-git version 1.8.3.4
+$brew install git  
+$git --version  
+git version 1.8.3.4  
 ```
 
 ##git subtree用法
@@ -44,8 +44,8 @@ git version 1.8.3.4
 解释：--squash意思是把subtree的改动合并成一次commit，这样就不用拉取子项目完整的历史记录。--prefix之后的=等号也可以用空格。  
 示例  
 ```
-$git remote add -f ai https://github.com/aoxu/ai.git
-$git subtree add --prefix=ai ai master --squash
+$git remote add -f ai https://github.com/aoxu/ai.git  
+$git subtree add --prefix=ai ai master --squash  
 ```   
 ###2. 从远程仓库更新子目录
 更新子目录有2条命令。  
