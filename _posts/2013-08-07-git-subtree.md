@@ -23,6 +23,7 @@ git subtree是一条git子命令，本质上subtree是一种合并策略，[从g
 
 ##git subtree的前提条件
 subtree子命令很晚才集成到git中，请确保你的git版本（使用git --version查看） > v1.8.0.0。有些文章中说v1.7.11就已经集成了，实际上没有，如果直接执行会看到这样的结果：  
+
 ```
 $git subtree  
 git: 'subtree' is not a git command. See 'git --help'.  
@@ -45,6 +46,7 @@ git version 1.8.3.4
 语法：`git subtree add --prefix=<子目录名> <子仓库名> <分支> --squash`  
 解释：--squash意思是把subtree的改动合并成一次commit，这样就不用拉取子项目完整的历史记录。--prefix之后的=等号也可以用空格。  
 示例  
+
 ```
 $git remote add -f ai https://github.com/aoxu/ai.git  
 $git subtree add --prefix=ai ai master --squash  
@@ -53,7 +55,8 @@ $git subtree add --prefix=ai ai master --squash
 更新子目录有2条命令。  
 语法：`git fetch <远程仓库名> <分支>`  
 语法：`git subtree pull --prefix=<子目录名> <远程分支> <分支> --squash`  
-示例：  
+示例  
+
 ```
 $git fetch ai master  
 $git subtree pull --prefix=ai ai --squash  
@@ -61,7 +64,8 @@ $git subtree pull --prefix=ai ai --squash
 ###3. 从子目录push到远程仓库（确认你有写权限）
 推送子目录的变更有1条命令。  
 语法：`git subtree push --prefix=<子目录名> <远程分支名> 分支`  
-示例：  
+示例  
+
 ```
 $git subtree push --prefix=ai ai master  
 ```
