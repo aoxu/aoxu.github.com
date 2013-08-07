@@ -25,9 +25,11 @@ git subtree是一条git子命令，本质上subtree是一种合并策略，[从g
 subtree子命令很晚才集成到git中，请确保你的git版本（使用git --version查看） > v1.8.0.0。有些文章中说v1.7.11就已经集成了，实际上没有，如果直接执行会看到这样的结果：  
 ```
 $git subtree  
-git: 'subtree' is not a git command. See 'git --help'.
+git: 'subtree' is not a git command. See 'git --help'.  
 ```
+
 如果你是在OS X下使用git，推荐用[homebrew](http://brew.sh/)来安装新版本
+
 ```
 $brew install git  
 $git --version  
