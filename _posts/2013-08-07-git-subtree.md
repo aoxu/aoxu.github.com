@@ -10,7 +10,7 @@ tags: []
 例如，在项目Game中有一个子目录AI。Game和AI分别是一个独立的git项目，可以分开维护。为了避免直接复制粘贴代码，我们希望Game中的AI子目录与AI的git项目关联，有3层意思：  
 1. AI子目录使用AI的git项目来填充，内容保持一致。  
 2. 当AI的git项目代码有更新，可以拉取更新到Game项目的AI子目录来。  
-2. 反过来，当Game项目的AI子目录有变更，还可以推送这些变更到AI的git项目。  
+3. 反过来，当Game项目的AI子目录有变更，还可以推送这些变更到AI的git项目。  
 用git subtree可以轻松满足上面的需求。
 
 ##对比git submodule
@@ -70,7 +70,7 @@ $git subtree pull --prefix=ai ai --squash
 $git subtree push --prefix=ai ai master  
 ```
 
-参考资料：
+参考资料：  
 1. [speackerdeck](https://speakerdeck.com/cloudsben/git-subtree-ti-dai-git-submodule)  
 2. [atlassian](http://blogs.atlassian.com/2013/05/alternatives-to-git-submodule-git-subtree/)  
 3. [pro git](http://git-scm.com/book/zh/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A0%91%E5%90%88%E5%B9%B6)  
