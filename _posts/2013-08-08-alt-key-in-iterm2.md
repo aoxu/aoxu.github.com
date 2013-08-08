@@ -28,14 +28,14 @@ $ps aux | grep ssh
 
 我们还能修改iTerm2的设置来正常使用这个快捷键。方法是：
 
-1. 打开菜单iTerm - Preferences，选择Profiles标签页，再点到Keys选项。
-2. 在Profile Shortcut Keys(快捷键映射列表)下面点+按钮，新增两个快捷键。
-3. 第一个快捷键：在Keyboard Shortcut按下option+F，Action选择Send Hex Code，最后在输入框输入下面内容
+1.打开菜单iTerm - Preferences，选择Profiles标签页，再点到Keys选项。
+2.在Profile Shortcut Keys(快捷键映射列表)下面点+按钮，新增两个快捷键。
+3.第一个快捷键：在Keyboard Shortcut按下option+F，Action选择Send Hex Code，最后在输入框输入下面内容
 
 ```
 0x1b 0x1b 0x5b 0x43
 ```
-4. 第二个快捷键：在Keyboard Shortcut按下option+B，Action选择Send Hex Code，最后在输入框输入下面内容
+4.第二个快捷键：在Keyboard Shortcut按下option+B，Action选择Send Hex Code，最后在输入框输入下面内容
 
 ```
 0x1b 0x1b 0x5b 0x44
