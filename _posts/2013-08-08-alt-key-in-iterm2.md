@@ -5,10 +5,11 @@ description: ""
 category: 
 tags: []
 ---
+
 ##Alt+F和Alt+B的作用
 Linux用户知道，在Linux命令行下用 Alt+F 和 Alt+B 可以按词一个个往前、后移动光标。例如下面这个命令
 
-```zsh
+```
 $ps aux | grep ssh
 ```
 输入完这条命令，光标在末尾。按一次 Alt+B ，光标会移动到ssh的前面；再按一次Alt+B，光标会移动到grep的前面；按一次Alt+F，光标会移动到grep的后面。
