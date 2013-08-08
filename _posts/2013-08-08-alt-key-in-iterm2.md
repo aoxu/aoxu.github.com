@@ -27,6 +27,7 @@ $ps aux | grep ssh
 如果什么都不改动，可以使用option+←和option+→来代替Alt+B和Alt+F，达到相同的效果。
 
 我们还能修改iTerm2的设置来正常使用这个快捷键。方法是：
+
 1. 打开菜单iTerm - Preferences，选择Profiles标签页，再点到Keys选项。
 2. 在Profile Shortcut Keys(快捷键映射列表)下面点+按钮，新增两个快捷键。
 3. 第一个快捷键：在Keyboard Shortcut按下option+F，Action选择Send Hex Code，最后在输入框输入下面内容
@@ -34,6 +35,7 @@ $ps aux | grep ssh
 ```
 0x1b 0x1b 0x5b 0x43
 ```
+
 4. 第二个快捷键：在Keyboard Shortcut按下option+B，Action选择Send Hex Code，最后在输入框输入下面内容
 
 ```
