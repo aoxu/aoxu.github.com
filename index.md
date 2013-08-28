@@ -1,6 +1,6 @@
 ---
 layout: page
-title: XA技术不宅
+title: 博客文章
 tagline: 一个懂产品的攻城狮。
 ---
 {% include JB/setup %}
