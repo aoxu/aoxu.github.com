@@ -17,7 +17,7 @@ tags: []
 
 ##框架的安装和使用
 ###安装
-由于现在还没有准备好kickstart包（Mac模拟器还没有完成），所以只能从源码安装。参照[项目主页的说明](https://github.com/dualface/quick-cocos2d-x#build-from-sources)，其中第1步的`Get soruces from Github.com`会比较慢，因为代码库的历史记录比较多，尤其是里面引用的[cocos2d-x子模块](https://github.com/dualface/cocos2d-x)比较大，整个拷贝下来>500MB。有2种办法可以快速下载：  
+由于现在还没有准备好kickstart包（Mac模拟器还没有完成），所以只能从源码安装。参照[项目主页的说明](https://github.com/dualface/quick-cocos2d-x#build-from-sources)，其中第1步的`Get sources from Github.com`会比较慢，因为代码库的历史记录比较多，尤其是里面引用的[cocos2d-x子模块](https://github.com/dualface/cocos2d-x)比较大，整个拷贝下来>500MB。有2种办法可以快速下载：  
 
 1. 直接在项目主页左上角下载ZIP文件。  
 ZIP文件只包含master主干最新版的文件，但是不包含子模块，子模块也需要单独下载。  
