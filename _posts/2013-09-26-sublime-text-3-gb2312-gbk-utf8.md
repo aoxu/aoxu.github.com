@@ -7,8 +7,9 @@ tags: []
 ---
 
 ##Sublime Text 3与Sublime Text 2的不同
-其实有不少人写过如何让Sublime Text 2支持GB2312和GBK编码，[例如这篇](http://www.fuzhaopeng.com/2012/sublime-text-2-with-gb2312-gbk-support/)。基本原理就是先装好Package Control，然后再通过这个安装ConvertToUTF8的Package。但是文中的方法在Sublime Text 3时代行不通了，因为安装Package Control的方法发生了变化，[新的安装方法](https://sublime.wbond.net/installation)是，按`Control + ~`打开命令行，然后输入下面这一行代码[(gist
-raw)](https://gist.github.com/aoxu/6715182/raw/5a3756d70cc44105290c51554070c859969d02ac/install_package_control.py)：
+其实有不少人写过如何让Sublime Text 2支持GB2312和GBK编码，[例如这篇](http://www.fuzhaopeng.com/2012/sublime-text-2-with-gb2312-gbk-support/)。基本原理就是先装好Package Control，然后再通过这个安装ConvertToUTF8的Package。  
+但是文中的方法在Sublime Text 3时代行不通了，因为安装Package Control的方法发生了变化，[新的安装方法](https://sublime.wbond.net/installation)是，按`Control + ~`打开命令行，然后输入下面这一行代码[(如果显示有问题，可以直接点开这个gist
+raw来复制)](https://gist.github.com/aoxu/6715182/raw/5a3756d70cc44105290c51554070c859969d02ac/install_package_control.py)：  
 ```python
 import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
 ```
