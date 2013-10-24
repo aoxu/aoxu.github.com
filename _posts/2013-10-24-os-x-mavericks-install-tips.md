@@ -14,9 +14,11 @@ tags: []
 
 1. 到App Store更新Xcode。更新完成后打开Xcode会提示需要安装额外组件，选安装。
 2. 安装命令行工具。在终端中输入下面命令：  
+
 ```
 $xcode-select --install 
 ```
+
 3.  更新homebrew，输入下面命令：  
 
 ```
