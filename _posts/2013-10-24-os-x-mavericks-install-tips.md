@@ -20,6 +20,7 @@ $xcode-select --install
 3.  更新homebrew，输入下面命令：  
 ```
 $brew update  
+
 $brew upgrade
 ```
 4. ![assist](http://ww4.sinaimg.cn/large/70dcc3a2gw1e9w5o2frlzj20ik0cz0tm.jpg)
