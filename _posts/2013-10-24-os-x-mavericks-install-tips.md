@@ -38,7 +38,7 @@ $brew upgrade
 ##开始使用
 还不了解OS X Mavericks带来了什么新东西？推荐看看官方给出的中文介绍：
 
-1. 这篇比较详细：[](http://www.apple.com/cn/osx/whats-new/)。其中注意关于Safari 7.0的介绍，可以点击『了解更多』到[专门的页面](http://www.apple.com/cn/safari/)。
-2. 这篇针对从OS X Mountain Lion升级过来的用户，每个功能有动画演示：[](https://help.apple.com/osx-mavericks/whats-new-from-mountain-lion)
+1. 这篇比较详细：[http://www.apple.com/cn/osx/whats-new/](http://www.apple.com/cn/osx/whats-new/)。其中注意关于Safari 7.0的介绍，可以点击『了解更多』到[专门的页面](http://www.apple.com/cn/safari/)。
+2. 这篇针对从OS X Mountain Lion升级过来的用户，每个功能有动画演示：[https://help.apple.com/osx-mavericks/whats-new-from-mountain-lion](https://help.apple.com/osx-mavericks/whats-new-from-mountain-lion)
 
 还有什么坑我没提到的，欢迎在评论中提出，我会补充到文章里。
