@@ -18,11 +18,12 @@ tags: []
 $xcode-select --install 
 ```
 3.  更新homebrew，输入下面命令：  
-```
-$brew update  
 
+```
+$brew update
 $brew upgrade
 ```
+
 4. ![assist](http://ww4.sinaimg.cn/large/70dcc3a2gw1e9w5o2frlzj20ik0cz0tm.jpg)
 为了使用Moom、EVE等APP，开启辅助功能设置。位于系统偏好设置 - 安全性与隐私 - 隐私 标签页 - 左侧 辅助功能，在左下角点锁图标解锁之后，勾上你要使用的APP。
 [来源](http://www.tekrevue.com/2013/06/25/how-to-enable-access-for-assistive-devices-in-os-x-mavericks/)
