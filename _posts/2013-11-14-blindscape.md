@@ -7,7 +7,7 @@ tags: []
 ---
 
 ## Blindscape 声音逃脱
-
+![blindscape_title](http://ww2.sinaimg.cn/large/70dcc3a2gw1eakttlvninj20d703qweo.jpg)
 ###游戏介绍
 Blindscape是一个不按常理出牌的游戏，这个游戏没有华丽的视觉效果，图标是一片黑，打开之后界面是一片黑，唯一的表现方式就是声音。玩这个游戏，你必须戴上耳机，通过全3D的声音效果，闭上眼睛来感受周围的环境。
 
