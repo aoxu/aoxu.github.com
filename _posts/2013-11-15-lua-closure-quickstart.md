@@ -1,5 +1,10 @@
 ---
 published: true
+layout: post
+title:"Blindscape 声音逃脱"
+description: ""
+category: null
+tags: []
 ---
 
 ## Lua 闭包快速入门
