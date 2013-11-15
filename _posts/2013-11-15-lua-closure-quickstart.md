@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ## Lua 闭包快速入门
