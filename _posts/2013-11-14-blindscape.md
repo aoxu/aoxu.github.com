@@ -21,5 +21,3 @@ Android版下载地址：[https://play.google.com/store/apps/details?id=com.gavi
 在快要通关前，会听到一段非常美妙的音乐，来提示你光亮就在前方。这段音乐是我推荐这个游戏的原因之一，因为它是后摇。这首主题音乐叫做《Blindscape Theme》，iTunes购买链接是[https://itunes.apple.com/album/blindscape-theme-single/id645925586](https://itunes.apple.com/album/blindscape-theme-single/id645925586)
 
 无法购买iTunes音乐的朋友可以在[这个地址](http://a.tumblr.com/tumblr_mo6na6KLP41r9iouzo1.mp3)下载到mp3。
-
-Fin.
